@@ -26,6 +26,9 @@ body {
 	background-color: green;
 	height:90px;
 	vertical-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px;
 }
 
 .outcome {
@@ -40,7 +43,8 @@ body {
 }
 
 .reportOut2 {
-	background-color: orange;
+	background-color: blue;
+	height: 90px;
 	margin-left: -15px;
 }
 .att {
@@ -55,6 +59,7 @@ body {
 }
 
 .pO2 {
-	height: 100px;
+	padding: 10px 0px 5px 15px;
 	font-size:40px;
+	font-weight: bold;
 }
