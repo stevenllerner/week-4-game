@@ -1,5 +1,6 @@
 body {
 	font-style: verdana, "times new roman";
+	background-image: url("../images/background5.jpg");
 }
 
 .row {
@@ -8,7 +9,7 @@ body {
 }
 
 .title {
-	background-color: #00008B;
+	background-color: #0000B3;
 	
 }
 
@@ -18,48 +19,42 @@ body {
 }
 
 .instructions {
-	background-color: #ffff00;
+	background-color: #e4ba4e;
 	font-size: 16px;
 }
 
 .target {
-	background-color: green;
-	height:90px;
+	background-color: #3399ff;
+	height:100px;
 	vertical-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
 	padding: 20px;
 }
 
 .outcome {
-	background-color: red;
-	height: 90px;
+	background-color: #99ccff;
+	height: 100px;
 	padding-top: 5px;
 }
 
-.reportOut1 {
-	background-color: orange;
-	margin-left: -15px;
-}
-
-.reportOut2 {
-	background-color: blue;
-	height: 90px;
-	margin-left: -15px;
-}
 .att {
 	width: 100px;
 	height: 100px;
 }
 
 .pO1 {
+	background-color: #e67300;
 	padding: 10px 0px 5px 15px;
 	font-size: 18px;
 	font-weight: bold;
+	margin-left: -15px;
 }
 
 .pO2 {
-	padding: 10px 0px 5px 15px;
+	background-color: #e67300;
+	padding: 10px 0px 10px 15px;
 	font-size:40px;
 	font-weight: bold;
+	margin-left: -15px;
 }

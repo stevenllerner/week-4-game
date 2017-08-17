@@ -6,7 +6,6 @@ var blueNum;
 var yellowNum;
 var greenNum;
 var score;
-var selection;
 
 //Sets wins=0 and losses=0 and displays
 function initializeDisplays() {
@@ -22,43 +21,60 @@ function initializeValues() {
 	blueNum = Math.floor(Math.random() * 19) + 1;
 	yellowNum = Math.floor(Math.random() * 19) + 1;
 	greenNum = Math.floor(Math.random() * 19) + 1;
+	score = 0;
 };
 
 //Displays target and score of zero at start of game
 function initializeGame() {
 	$(".target").html(target);
-	score = 0;
 	$(".pO2").html(score);
 };
 
 initializeDisplays();
 initializeValues();
-console.log(diamondNum);
-console.log(blueNum);
-console.log(yellowNum);
-console.log(greenNum);
 initializeGame();
-console.log(target);
-console.log(score);
 
-//if (score < target) {
+if (score < target) {
 	$(".diamond").click(function(){
-		selection=diamondNum;
+		score = score + diamondNum;
+		$(".pO2").html(score);
+		console.log(score);
+		console.log(target);
 	});
 	$(".blue").click(function(){
-		selection=blueNum;
+		score = score + blueNum;
+		$(".pO2").html(score);
+		console.log(score);
+		console.log(target);
 	});
 	$(".yellow").click(function(){
-		selection=yellowNum;
+		score = score + yellowNum;
+		$(".pO2").html(score);
+		console.log(score);
+		console.log(target);		
 	});
 	$(".green").click(function(){
-		selection=greenNum;
+		score = score + greenNum;
+		$(".pO2").html(score);
+		console.log(score);
+		console.log(target);		
 	});
-	score = score + selection;
-	$(".reportOut2").html(score);
-//}	
-console.log(selection);
-console.log(score);
+
+} else if (score > target) {
+	$(".p1").html("You lost. Please try again.");
+	losses++;
+	console.log(losses);
+	$(".p3").html("Losses: " + losses);
+	
+} else {
+	$(".p1").html("Congrats! You Won!");
+	wins++;
+	consol.log(wins);
+	$(".p2").html("Wins: " + wins);
+}
+
+
+
 
 
 
