@@ -30,10 +30,8 @@ function initializeGame() {
 	$(".pO2").html(score);
 };
 
-initializeDisplays();
-initializeValues();
-initializeGame();
 
+function playGame() {
 if (score < target) {
 	$(".diamond").click(function(){
 		score = score + diamondNum;
@@ -72,9 +70,12 @@ if (score < target) {
 	consol.log(wins);
 	$(".p2").html("Wins: " + wins);
 }
+}
 
-
-
+initializeDisplays();
+initializeValues();
+initializeGame();
+playGame();
 
 
 
