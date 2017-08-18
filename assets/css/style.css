@@ -43,6 +43,10 @@ body {
 	height: 100px;
 }
 
+.p1, .p2, .p3 {
+	font-weight: bold;
+}
+
 .pO1 {
 	background-color: #e67300;
 	padding: 10px 0px 5px 15px;
